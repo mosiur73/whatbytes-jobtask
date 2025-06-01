@@ -5,7 +5,7 @@ import React from 'react';
 
 const NavBar = () => {
     return (
-       <header className="bg-blue-800 text-white  lg:px-28 py-2 flex items-center justify-between shadow-md">
+       <header className="bg-blue-800 text-white   lg:px-28 py-2 flex items-center justify-between shadow-md">
       {/* Logo */}
       <div className="text-2xl font-bold tracking-wide">Logo</div>
 
