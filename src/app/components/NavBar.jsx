@@ -5,6 +5,7 @@ import React from 'react';
 import { useCart } from '../context/CartContext';
 import { useRouter, useSearchParams } from 'next/navigation';
 import { useState } from 'react';
+import Link from 'next/link';
 
 
 
@@ -59,6 +60,7 @@ const NavBar = () => {
       </form>
 
         {/* Cart */}
+        <Link href="/cart">
         <div className="relative flex items-center gap-1 bg-black px-6 py-2 rounded-2xl">
           <ShoppingCart className="w-6 h-6" />
           <span className="ml-3 font-bold">Cart</span>
@@ -66,6 +68,7 @@ const NavBar = () => {
             {totalCount}
           </span>
         </div>
+        </Link>
       </div>
     </header>
     );

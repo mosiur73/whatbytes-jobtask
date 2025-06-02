@@ -10,7 +10,7 @@ const page = () => {
   const [filters, setFilters] = useState({});
   const [searchQuery, setSearchQuery] = useState('');
 
-  // ফিল্টার + সার্চ মিলে ফাইনাল প্রোডাক্ট তৈরি করা হচ্ছে
+  
   useEffect(() => {
     let filtered = products;
 
@@ -64,7 +64,7 @@ const page = () => {
           {filteredProducts.length > 0 ? (
             <ProductGrid products={filteredProducts} />
           ) : (
-            <p className="text-red-500 text-center">No products found.</p>
+            <p className="text-red-500 text-4xl text-center">No products found.</p>
           )}
         </div>
       </div>
