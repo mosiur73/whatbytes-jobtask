@@ -5,7 +5,7 @@ import products from './data/products';
 import SidebarFilter from './component/SidebarFilter';
 import ProductGrid from './component/ProductGrid';
 
-const page = () => {
+const Page = () => {
   const [filteredProducts, setFilteredProducts] = useState(products);
   const [filters, setFilters] = useState({});
   const [searchQuery, setSearchQuery] = useState('');
