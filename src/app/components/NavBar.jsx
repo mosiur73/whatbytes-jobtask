@@ -4,6 +4,8 @@ import { ShoppingCart,Search  } from 'lucide-react'
 import React from 'react';
 
 const NavBar = () => {
+   
+  
     return (
        <header className="bg-blue-800 text-white   lg:px-28 py-2 flex items-center justify-between shadow-md">
       {/* Logo */}
@@ -18,6 +20,7 @@ const NavBar = () => {
           </span>
           <input
             type="text"
+             
             placeholder="Search for products..."
             className="pl-10 pr-4 py-2 rounded-md border border-white text-white placeholder-white bg-transparent focus:outline-none focus:ring-2 focus:ring-white w-40 lg:w-96"
           />

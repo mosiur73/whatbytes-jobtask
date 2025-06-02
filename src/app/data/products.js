@@ -28,7 +28,7 @@ const products = [
     description: "Latest model with AMOLED display and fast processor.",
   },
   {
-    id: 6,
+    id: 4,
     title: "Mobile Phone",
     price: 800,
     image: "https://i.ibb.co/QmqHW67/4789940.jpg",
@@ -37,7 +37,7 @@ const products = [
     description: "Stylish sunglasses with UV protection.",
   },
   {
-    id: 7,
+    id: 5,
     title: "Mobile Phone",
     price: 10500,
     image: "https://i.ibb.co/8X9DhTC/4791692.jpg",
@@ -46,7 +46,7 @@ const products = [
     description: "Efficient microwave with multiple cooking modes.",
   },
   {
-    id: 8,
+    id: 6,
     title: "Watch",
     price: 2300,
     image: "https://i.ibb.co/d6t9Zhp/rendering-smart-home-device-2.jpg",

@@ -48,20 +48,20 @@ const SidebarFilter = ({ onFilterChange }) => {
       </div>
 
       {/* Brand Filter */}
-      <div>
-        <h2 className="font-semibold mb-2 bg-blue-700 text-white">Brand</h2>
+      <div className='bg-blue-500 text-white'>
+        <h2 className="font-semibold mb-2 bg-blue-600 text-white ">Brand</h2>
         <select
           value={brand}
           onChange={(e) => setBrand(e.target.value)}
-          className="w-full border border-gray-300 p-1 rounded"
+          className="w-full border   p-1 rounded-2xl"
         >
-          <option value="">All</option>
-          <option value="Sony">Sony</option>
-          <option value="Samsung">Samsung</option>
-          <option value="Ray-Ban">Ray-Ban</option>
-          <option value="Panasonic">Panasonic</option>
-          <option value="Bata">Bata</option>
-          <option value="H&M">H&M</option>
+          <option className='text-black' value="">All</option>
+          <option className='text-black' value="Sony">Sony</option>
+          <option className='text-black' value="Samsung">Samsung</option>
+          <option className='text-black' value="Ray-Ban">Ray-Ban</option>
+          <option className='text-black' value="Panasonic">Panasonic</option>
+          <option className='text-black' value="Bata">Bata</option>
+          <option className='text-black' value="H&M">H&M</option>
         </select>
       </div>
     </div>
