@@ -4,12 +4,14 @@ import { useParams } from 'next/navigation';
 import products from '@/app/data/products';
 import React, { useState, useEffect } from 'react';
 import Image from 'next/image';
+import { useCart } from '@/app/context/CartContext';
+ 
 
 const ProductDetailPage = () => {
   const params = useParams();
   const productId = parseInt(params.id);
   const product = products.find((p) => p.id === productId);
-
+  const { addToCart } = useCart()
   const [quantity, setQuantity] = useState(1);
 
   useEffect(() => {
@@ -18,17 +20,10 @@ const ProductDetailPage = () => {
   }, [product]);
 
   const handleAddToCart = () => {
-    const cart = JSON.parse(localStorage.getItem('cart')) || [];
-    const exists = cart.find(item => item.id === product.id);
-
-    if (exists) {
-      exists.quantity += quantity;
-    } else {
-      cart.push({ ...product, quantity });
+    if (product) {
+      addToCart(product, quantity); // ✅ Step 3: context-based addToCart ব্যবহার
+      alert('Product added to cart!');
     }
-
-    localStorage.setItem('cart', JSON.stringify(cart));
-    alert('Product added to cart!');
   };
 
   if (!product) {
